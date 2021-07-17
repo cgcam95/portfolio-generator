@@ -1,3 +1,4 @@
+// const fs = require('fs');
 fs.writeFile('./dist/index.html');
 const generatePage = require('./src/page-template.js');
 const inquirer = require('inquirer');
@@ -16,7 +17,7 @@ const promptUser = () => {
                 console.log('Please enter your name!');
                 return false;
             }
-        }
+        }               
     },
     {
         type: 'input',
